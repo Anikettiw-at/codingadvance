@@ -67,7 +67,8 @@ const options = {
   },
   headers: {
     'x-rapidapi-key': process.env.JUDGE0_KEY,
-    'x-rapidapi-host': 'judge0-ce.p.rapidapi.com'
+    'x-rapidapi-host': 'judge0-ce.p.rapidapi.com',
+    'Content-Type': 'application/json'
   }
 };
 
@@ -111,3 +112,46 @@ module.exports = {getLanguageById,submitBatch,submitToken};
 // 
 
 
+//   nwee
+
+// const axios = require('axios');
+
+// const options = {
+//   method: 'POST',
+//   url: 'https://judge0-ce.p.rapidapi.com/submissions/batch',
+//   params: {
+//     base64_encoded: 'true'
+//   },
+//   headers: {
+//     'x-rapidapi-key': '0e95f3ccc5mshca1ANiket TIwari2cjsnd90cd8c6e5aa',
+//     'x-rapidapi-host': 'judge0-ce.p.rapidapi.com',
+//     'Content-Type': 'application/json'
+//   },
+//   data: {
+//     submissions: [
+//       {
+//         language_id: 46,
+//         source_code: 'ZWNobyBoZWxsbyBmcm9tIEJhc2gK'
+//       },
+//       {
+//         language_id: 71,
+//         source_code: 'cHJpbnQoImhlbGxvIGZyb20gUHl0aG9uIikK'
+//       },
+//       {
+//         language_id: 72,
+//         source_code: 'cHV0cygiaGVsbG8gZnJvbSBSdWJ5IikK'
+//       }
+//     ]
+//   }
+// };
+
+// async function fetchData() {
+// 	try {
+// 		const response = await axios.request(options);
+// 		console.log(response.data);
+// 	} catch (error) {
+// 		console.error(error);
+// 	}
+// }
+
+// fetchData();
